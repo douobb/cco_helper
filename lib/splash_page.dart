@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rive_splash_screen/rive_splash_screen.dart';
+import 'package:rive/rive.dart';
 import 'home_page.dart';
 
 class SplashPage extends StatefulWidget {

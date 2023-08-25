@@ -128,7 +128,6 @@ class Page5_1 extends StatelessWidget {
     return Align(
       alignment: Alignment.topCenter,
       child: Container(
-        constraints: BoxConstraints(maxHeight: 300),
         decoration: BoxDecoration(
             border: Border(
                 right: BorderSide(

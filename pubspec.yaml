@@ -31,6 +31,7 @@ dependencies:
   font_awesome_flutter: any
   bottom_navy_bar: ^6.0.0
   rive_splash_screen: ^0.1.1
+  rive: ^0.11.14
   url_launcher: ^6.1.12
   flutter:
     sdk: flutter
