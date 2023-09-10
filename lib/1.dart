@@ -66,14 +66,14 @@ class Page1 extends StatelessWidget {
                     Divider(height: 10.0,color: Colors.grey,),
                     RichText(
                       text: TextSpan(children: [
-                        TextSpan(text: '本網頁由', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                        TextSpan(text: '本工具由', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                         TextSpan(text: ' douobb ', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
-                        TextSpan(text: '提供，為本公會成員專有，請勿外流，未來計畫開發手機板，若這個小工具對你有幫助，可以給我一點鼓勵，若在使用本工具時有遇到bug或有其他建議，歡迎私訊我', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18))
+                        TextSpan(text: '提供，為本公會成員專有，請勿外流，若這個小工具對你有幫助，可以給我一點鼓勵，若在使用本工具時有遇到bug或有其他建議，歡迎私訊我', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18))
                       ]),
                     ),
                     Divider(height: 30.0,color: Colors.grey,),
                     Text(
-                        "by douobb 2023/08/25"
+                        "by douobb 2023/09/09"
                         ,style: TextStyle(color:  Color.fromRGBO(103, 103, 103, 1),fontSize: 18)
                     ),
                   ],

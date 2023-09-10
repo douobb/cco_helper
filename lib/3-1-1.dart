@@ -52,7 +52,7 @@ class Page3_1_1 extends StatelessWidget {
     tileMake('已加密的公會記憶碎片', 'encrypted gang memory shard', '可在公會內解密，獲得隨機裝備'),
     tileMake('公會入侵指令發信器', 'Gang Invasion Order Transmitter', '可用於開啟較高難度的入侵地城'),
     tileMake('密鑰碎片', 'Key Fragment', '在地城中取得3個不同區域的密鑰碎片後，在終端機合成可以進入下個地區'),
-    tileMake('地城代幣', 'Dungeon Token', '可與裝備商人換取物品\n獲得方式詳見入門>其他'),
+    tileMake('地城代幣', 'Dungeon Token', '可以透過解任務(黃色問號)以及打死科技歹徒(撿地上的箱子有機率遇到)獲得\n兩種獲取途徑都在地下城中，可以和裝備商人換取錄音帶以及紫箱'),
   ];
 
   @override

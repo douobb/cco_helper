@@ -59,7 +59,7 @@ class Page2_2 extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(
-                      "目前價格:醫碎<<彈碎<科碎<軍碎，因此建議新手不要買軍碎來壓"
+                      "目前價格:醫碎<<彈碎<軍碎<科碎，因此建議新手不要買軍碎來壓"
                       ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                   SizedBox(height: 10),
                   Text(

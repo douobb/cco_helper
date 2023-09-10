@@ -10,8 +10,8 @@ class Page3_1 extends StatelessWidget {
     Tab(child:Text('物質',style: TextStyle(fontSize: 14))),
     Tab(child:Text('裝備',style: TextStyle(fontSize: 14))),
     Tab(child:Text('醫療',style: TextStyle(fontSize: 14))),
-    Tab(child:Text('buff',style: TextStyle(fontSize: 14))),
     Tab(child:Text('背包',style: TextStyle(fontSize: 14))),
+    Tab(child:Text('buff',style: TextStyle(fontSize: 14))),
   ];
 
   final pages = [Page3_1_1(), Page3_1_2(), Page3_1_3(), Page3_1_4(), Page3_1_5()];
