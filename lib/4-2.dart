@@ -83,240 +83,247 @@ class _MyWidgetState extends State<Page4_2> {
           width: 800,
           child:Padding(
               padding: EdgeInsets.all(10),
-              child: Column(
-                children: [
-                  Text(
-                      "請輸入各項數值"
-                      ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                  SizedBox(height: 10),
-                  Row(
-                    children: [
-                      Text("搜索次數(1~12)",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child:TextField(
-                          cursorColor:Color.fromRGBO(197, 226, 220, 1),
-                          controller: _controllerTimes,
-                          keyboardType: TextInputType.number,
-                          inputFormatters: <TextInputFormatter>[
-                            FilteringTextInputFormatter.digitsOnly
-                          ],
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Color.fromRGBO(197, 226, 220, 1),
-                          ),
-                          decoration: InputDecoration(
-                            counterText: '',
-                            isDense: true,
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
-                            ),
-                            filled: true,
-                            fillColor: Color.fromRGBO(50, 50, 50, 0.95),
-                            isCollapsed: true,
-                            contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 20),
-                      Text("搜索等級(1~800)",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child:TextField(
-                          cursorColor:Color.fromRGBO(197, 226, 220, 1),
-                          controller: _controllerLevel,
-                          keyboardType: TextInputType.number,
-                          inputFormatters: <TextInputFormatter>[
-                            FilteringTextInputFormatter.digitsOnly
-                          ],
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Color.fromRGBO(197, 226, 220, 1),
-                          ),
-                          decoration: InputDecoration(
-                            counterText: '',
-                            isDense: true,
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
-                            ),
-                            filled: true,
-                            fillColor: Color.fromRGBO(50, 50, 50, 0.95),
-                            isCollapsed: true,
-                            contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 30),
-                  Text(
-                      "請輸入各類物品價值(AI/k)"
-                      ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                  SizedBox(height: 10),
-                  Row(
-                    children: [
-                      Text("醫碎",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child:TextField(
-                          cursorColor:Color.fromRGBO(197, 226, 220, 1),
-                          controller: _controllerValueOfMtp,
-                          keyboardType: TextInputType.number,
-                          inputFormatters: <TextInputFormatter>[
-                            FilteringTextInputFormatter.digitsOnly
-                          ],
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Color.fromRGBO(197, 226, 220, 1),
-                          ),
-                          decoration: InputDecoration(
-                            counterText: '',
-                            isDense: true,
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
-                            ),
-                            filled: true,
-                            fillColor: Color.fromRGBO(50, 50, 50, 0.95),
-                            isCollapsed: true,
-                            contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 20),
-                      Text("彈碎",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child:TextField(
-                          cursorColor:Color.fromRGBO(197, 226, 220, 1),
-                          controller: _controllerValueOfAtp,
-                          keyboardType: TextInputType.number,
-                          inputFormatters: <TextInputFormatter>[
-                            FilteringTextInputFormatter.digitsOnly
-                          ],
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Color.fromRGBO(197, 226, 220, 1),
-                          ),
-                          decoration: InputDecoration(
-                            counterText: '',
-                            isDense: true,
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
-                            ),
-                            filled: true,
-                            fillColor: Color.fromRGBO(50, 50, 50, 0.95),
-                            isCollapsed: true,
-                            contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                          ),
-                        ),
-                      ),
-                      SizedBox(width: 20),
-                      Text("軍碎",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child:TextField(
-                          cursorColor:Color.fromRGBO(197, 226, 220, 1),
-                          controller: _controllerValueOfMatp,
-                          keyboardType: TextInputType.number,
-                          inputFormatters: <TextInputFormatter>[
-                            FilteringTextInputFormatter.digitsOnly
-                          ],
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Color.fromRGBO(197, 226, 220, 1),
-                          ),
-                          decoration: InputDecoration(
-                            counterText: '',
-                            isDense: true,
-                            enabledBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
-                            ),
-                            filled: true,
-                            fillColor: Color.fromRGBO(50, 50, 50, 0.95),
-                            isCollapsed: true,
-                            contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
-                          ),
-                        ),
-                      )
-                    ],
-                  ),
-                  SizedBox(height: 30),
-                  ElevatedButton(
-                    child: Text('計算'),
-                    style: ButtonStyle(
-                        textStyle: MaterialStateProperty.all(TextStyle(fontSize: 18)),
-                        backgroundColor: MaterialStateProperty.all(Color.fromRGBO(50, 50, 50, 0.95)),
-                        foregroundColor: MaterialStateProperty.all(Color.fromRGBO(197, 226, 220, 1)),
-                        shape: MaterialStateProperty.all(
-                            StadiumBorder(
-                                side: BorderSide(
-                                  style: BorderStyle.solid,
-                                  color: Color.fromRGBO(197, 226, 220, 1),
-                                )
-                            )
-                        ),
-                        padding: MaterialStateProperty.all(EdgeInsets.fromLTRB(20, 15, 20, 15))
-                    ),
-                    onPressed: () {
-                      if(_controllerTimes.text=='') _controllerTimes.text = '10';
-                      if(_controllerLevel.text=='') _controllerLevel.text = '1';
-                      if(_controllerValueOfMtp.text=='') _controllerValueOfMtp.text = '90';
-                      if(_controllerValueOfAtp.text=='') _controllerValueOfAtp.text = '120';
-                      if(_controllerValueOfMatp.text=='') _controllerValueOfMatp.text = '120';
-                      double ts = 0;
-                      tsCount = redBag-ts.floor();
-                      percentOfRedBag =ts*100/redBag;
-                      for(int i = 0; i<42;i++){
-                        if(int.parse(_controllerLevel.text)<data[i+1][0]){
-                          bestArea = i;
-                          break;
-                        }
-                      }
-                      _reloadTextSetter((){});
-                    },
-                  ),
-                  SizedBox(height: 30),
-                  StatefulBuilder(builder: (BuildContext context, StateSetter stateSetter){
-                    _reloadTextSetter = stateSetter;
-                    return Row(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Text(
+                        "請輸入各項數值"
+                        ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                    SizedBox(height: 10),
+
+                    Row(
                       children: [
+                        Text("搜索等級 (1~800)",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                        SizedBox(width: 10),
                         Expanded(
-                            child: Container(
-                              padding: EdgeInsets.fromLTRB(10, 10, 30, 10),
-                              margin: EdgeInsets.only(left: 5),
-                              decoration: BoxDecoration(
-                                  color: Color.fromRGBO(43, 43, 43, 0.95),
-                                  border: Border.all(color: Color.fromRGBO(192, 191, 14, 1)),
-                                  boxShadow: [BoxShadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 10)]
+                          child:TextField(
+                            cursorColor:Color.fromRGBO(197, 226, 220, 1),
+                            controller: _controllerLevel,
+                            keyboardType: TextInputType.number,
+                            inputFormatters: <TextInputFormatter>[
+                              FilteringTextInputFormatter.digitsOnly
+                            ],
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Color.fromRGBO(197, 226, 220, 1),
+                            ),
+                            decoration: InputDecoration(
+                              counterText: '',
+                              isDense: true,
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
                               ),
-                              child:RichText(
-                                text: TextSpan(children: [
-                                  TextSpan(text: '目前最佳搜索地區: '+ data[bestArea][0].toString() +'\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                                  TextSpan(text: '期望值: '+ (data[bestArea][1]*int.parse(_controllerTimes.text)).round().toString() +'醫碎 '+ (data[bestArea][2]*int.parse(_controllerTimes.text)).round().toString() +'彈碎 '+ (data[bestArea][3]*int.parse(_controllerTimes.text)).round().toString() +'軍碎\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                                  TextSpan(text: '總價值: '+ ((data[bestArea][1]*int.parse(_controllerTimes.text)*int.parse(_controllerValueOfMtp.text)+data[bestArea][2]*int.parse(_controllerTimes.text)*int.parse(_controllerValueOfAtp.text)+data[bestArea][3]*int.parse(_controllerTimes.text)*int.parse(_controllerValueOfMatp.text))/1000).toStringAsFixed(1)+'AI', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                                ]),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
                               ),
-                            )
+                              filled: true,
+                              fillColor: Color.fromRGBO(50, 50, 50, 0.95),
+                              isCollapsed: true,
+                              contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Text("搜索次數 (1~12)  ",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child:TextField(
+                            cursorColor:Color.fromRGBO(197, 226, 220, 1),
+                            controller: _controllerTimes,
+                            keyboardType: TextInputType.number,
+                            inputFormatters: <TextInputFormatter>[
+                              FilteringTextInputFormatter.digitsOnly
+                            ],
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Color.fromRGBO(197, 226, 220, 1),
+                            ),
+                            decoration: InputDecoration(
+                              counterText: '',
+                              isDense: true,
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
+                              ),
+                              filled: true,
+                              fillColor: Color.fromRGBO(50, 50, 50, 0.95),
+                              isCollapsed: true,
+                              contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 30),
+                    Text(
+                        "請輸入各類物品價值(AI/k)"
+                        ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Text("醫碎",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child:TextField(
+                            cursorColor:Color.fromRGBO(197, 226, 220, 1),
+                            controller: _controllerValueOfMtp,
+                            keyboardType: TextInputType.number,
+                            inputFormatters: <TextInputFormatter>[
+                              FilteringTextInputFormatter.digitsOnly
+                            ],
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Color.fromRGBO(197, 226, 220, 1),
+                            ),
+                            decoration: InputDecoration(
+                              counterText: '',
+                              isDense: true,
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
+                              ),
+                              filled: true,
+                              fillColor: Color.fromRGBO(50, 50, 50, 0.95),
+                              isCollapsed: true,
+                              contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        Text("彈碎",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child:TextField(
+                            cursorColor:Color.fromRGBO(197, 226, 220, 1),
+                            controller: _controllerValueOfAtp,
+                            keyboardType: TextInputType.number,
+                            inputFormatters: <TextInputFormatter>[
+                              FilteringTextInputFormatter.digitsOnly
+                            ],
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Color.fromRGBO(197, 226, 220, 1),
+                            ),
+                            decoration: InputDecoration(
+                              counterText: '',
+                              isDense: true,
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
+                              ),
+                              filled: true,
+                              fillColor: Color.fromRGBO(50, 50, 50, 0.95),
+                              isCollapsed: true,
+                              contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 20),
+                        Text("軍碎",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child:TextField(
+                            cursorColor:Color.fromRGBO(197, 226, 220, 1),
+                            controller: _controllerValueOfMatp,
+                            keyboardType: TextInputType.number,
+                            inputFormatters: <TextInputFormatter>[
+                              FilteringTextInputFormatter.digitsOnly
+                            ],
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Color.fromRGBO(197, 226, 220, 1),
+                            ),
+                            decoration: InputDecoration(
+                              counterText: '',
+                              isDense: true,
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 0.7)),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color.fromRGBO(192, 191, 14, 1)),
+                              ),
+                              filled: true,
+                              fillColor: Color.fromRGBO(50, 50, 50, 0.95),
+                              isCollapsed: true,
+                              contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                            ),
+                          ),
                         )
                       ],
-                    );
-                  })
-                ],
+                    ),
+                    SizedBox(height: 30),
+                    ElevatedButton(
+                      child: Text('計算'),
+                      style: ButtonStyle(
+                          textStyle: MaterialStateProperty.all(TextStyle(fontSize: 18)),
+                          backgroundColor: MaterialStateProperty.all(Color.fromRGBO(50, 50, 50, 0.95)),
+                          foregroundColor: MaterialStateProperty.all(Color.fromRGBO(197, 226, 220, 1)),
+                          shape: MaterialStateProperty.all(
+                              StadiumBorder(
+                                  side: BorderSide(
+                                    style: BorderStyle.solid,
+                                    color: Color.fromRGBO(197, 226, 220, 1),
+                                  )
+                              )
+                          ),
+                          padding: MaterialStateProperty.all(EdgeInsets.fromLTRB(20, 10, 20, 10))
+                      ),
+                      onPressed: () {
+                        if(_controllerTimes.text=='') _controllerTimes.text = '10';
+                        if(_controllerLevel.text=='') _controllerLevel.text = '1';
+                        if(_controllerValueOfMtp.text=='') _controllerValueOfMtp.text = '90';
+                        if(_controllerValueOfAtp.text=='') _controllerValueOfAtp.text = '120';
+                        if(_controllerValueOfMatp.text=='') _controllerValueOfMatp.text = '120';
+                        double ts = 0;
+                        tsCount = redBag-ts.floor();
+                        percentOfRedBag =ts*100/redBag;
+                        for(int i = 0; i<42;i++){
+                          if(int.parse(_controllerLevel.text)<data[i+1][0]){
+                            bestArea = i;
+                            break;
+                          }
+                        }
+                        _reloadTextSetter((){});
+                      },
+                    ),
+                    SizedBox(height: 30),
+                    StatefulBuilder(builder: (BuildContext context, StateSetter stateSetter){
+                      _reloadTextSetter = stateSetter;
+                      return Row(
+                        children: [
+                          Expanded(
+                              child: Container(
+                                padding: EdgeInsets.fromLTRB(10, 10, 30, 10),
+                                margin: EdgeInsets.only(left: 5),
+                                decoration: BoxDecoration(
+                                    color: Color.fromRGBO(43, 43, 43, 0.95),
+                                    border: Border.all(color: Color.fromRGBO(192, 191, 14, 1)),
+                                    boxShadow: [BoxShadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 10)]
+                                ),
+                                child:RichText(
+                                  text: TextSpan(children: [
+                                    TextSpan(text: '目前最佳搜索地區: '+ data[bestArea][0].toString() +'\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                                    TextSpan(text: '期望值: '+ (data[bestArea][1]*int.parse(_controllerTimes.text)).round().toString() +'醫碎 '+ (data[bestArea][2]*int.parse(_controllerTimes.text)).round().toString() +'彈碎 '+ (data[bestArea][3]*int.parse(_controllerTimes.text)).round().toString() +'軍碎\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                                    TextSpan(text: '總價值: '+ ((data[bestArea][1]*int.parse(_controllerTimes.text)*int.parse(_controllerValueOfMtp.text)+data[bestArea][2]*int.parse(_controllerTimes.text)*int.parse(_controllerValueOfAtp.text)+data[bestArea][3]*int.parse(_controllerTimes.text)*int.parse(_controllerValueOfMatp.text))/1000).toStringAsFixed(1)+'AI', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                                  ]),
+                                ),
+                              )
+                          )
+                        ],
+                      );
+                    })
+                  ],
+                )
               )
           ),
         )

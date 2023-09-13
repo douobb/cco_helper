@@ -45,8 +45,8 @@ class Page3_1_5 extends StatelessWidget {
     tileMake('獎勵助推碎片', 'Reward Booster Shard', '全體玩家獲得可選擇的獎勵提升buff(掛機時間4倍，獎勵2倍)'),
     tileMake('神經突觸加速器', 'Synaptic Acceleration Transmitter', '使用後會給予全體玩家加成，10分鐘內完成掛機任務的速度提升5%(可疊加至80%)'),
     tileMake('稀有神經突觸加速器', 'Rare Synaptic Acceleration Transmitter', '使用後會給予全體玩家加成，20分鐘內完成掛機任務的速度提升40%(可疊加至80%)'),
-    tileMake('額葉皮質優化器', 'Frontal Cortex Optimization Transmitter', '使用後會給予全體玩家加成，20分鐘內經驗值獲得量提升80%'),
-    tileMake('交易漏洞發信器', 'Transaction Exploit Transmitter', '使用後會給予全體玩家加成，20分鐘內比特幣取得量提升40%(可疊加至100%)'),
+    tileMake('額葉皮質優化器', 'Frontal Cortex Optimization Transmitter', '使用後會給予全體玩家加成(掛機結束時有才吃的到效果)，20分鐘內經驗值獲得量提升80%'),
+    tileMake('交易漏洞發信器', 'Transaction Exploit Transmitter', '使用後會給予全體玩家加成(掛機結束時有才吃的到效果)，20分鐘內比特幣取得量提升40%(可疊加至100%)'),
   ];
 
   @override

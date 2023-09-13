@@ -35,7 +35,7 @@ class Page3_4 extends StatelessWidget {
                   RichText(
                     text: TextSpan(children: [
                       TextSpan(text: 'Q:要怎麼升級?\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
-                      TextSpan(text: 'A:10等之前可以先打附近的敵人提升等級，之後也可以透過打地下城以及掛AI升級\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                      TextSpan(text: 'A:10等之前可以先打附近的敵人提升等級，之後也可以透過打地下城以及掛AI升級，在打怪時要注意，10等之後如果死亡會扣除10%經驗值以及10%身上的btc\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                       TextSpan(text: 'Q:我的__等級怎麼升不上去了?\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
                       TextSpan(text: 'A:其他小等級是不會超過主等級的\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                       TextSpan(text: 'Q:要怎麼開啟其他地區?\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
@@ -60,12 +60,16 @@ class Page3_4 extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(
-                      '醫療物品數據'
+                      '醫療'
                       ,style: TextStyle(
                       color: Color.fromRGBO(192, 191, 14, 1),fontSize: 24,shadows: [Shadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 5,offset: Offset(-3,-3))]
                   )
                   ),
                   Divider(height: 10.0,color: Colors.grey,),
+                  Text(
+                      "醫療物品在打怪時非常重要，可以在背包的快捷欄設定醫療物品，建議新手在補兩次血還補不滿的時候就可以製作更高等級的藥品來應付回血的需求"
+                      ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                  SizedBox(height: 10),
                   Text(
                       '單體醫療'
                       ,style: TextStyle(
@@ -78,11 +82,9 @@ class Page3_4 extends StatelessWidget {
                         width: 1,
                         color: Color.fromRGBO(197, 226, 220, 1)),
                     columnWidths: const <int, TableColumnWidth>{
-                      0: FixedColumnWidth(190.0),
+                      0: FixedColumnWidth(180.0),
                       1: FixedColumnWidth(80.0),
-                      2: FixedColumnWidth(55.0),
-                      3: FixedColumnWidth(55.0),
-                      4: FixedColumnWidth(90.0),
+                      2: FixedColumnWidth(90.0),
                     },
                     children: const <TableRow>[
                       TableRow(
@@ -94,14 +96,6 @@ class Page3_4 extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(4.0),
                             child:Text("補血量",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("醫碎",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("產量",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
@@ -121,14 +115,6 @@ class Page3_4 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("1",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("1",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
                             child:Text("500",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           )
                         ],
@@ -142,14 +128,6 @@ class Page3_4 extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(4.0),
                             child:Text("1201",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("2",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("2",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
@@ -169,14 +147,6 @@ class Page3_4 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("4",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("3",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
                             child:Text("450",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           )
                         ],
@@ -190,14 +160,6 @@ class Page3_4 extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(4.0),
                             child:Text("12001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("8",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("4",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
@@ -217,14 +179,6 @@ class Page3_4 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("16",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("5",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
                             child:Text("812",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           )
                         ],
@@ -238,14 +192,6 @@ class Page3_4 extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(4.0),
                             child:Text("54001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("32",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("6",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
@@ -265,14 +211,6 @@ class Page3_4 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("64",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("7",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
                             child:Text("1203",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           )
                         ],
@@ -286,14 +224,6 @@ class Page3_4 extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(4.0),
                             child:Text("240001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("128",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("8",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
@@ -313,14 +243,6 @@ class Page3_4 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("256",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("8",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
                             child:Text("1500",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           )
                         ],
@@ -337,14 +259,6 @@ class Page3_4 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("256",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("8",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
                             child:Text("3125",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           )
                         ],
@@ -358,14 +272,6 @@ class Page3_4 extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.all(4.0),
                             child:Text("5000001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("1024",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Text("4",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),

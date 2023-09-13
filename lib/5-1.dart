@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Page5_1 extends StatelessWidget {
   List<Widget> list = <Widget>[
@@ -22,7 +22,7 @@ class Page5_1 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://docs.google.com/spreadsheets/d/1wJLuZhZg_Xs1ouyjh6chntY8p3lcgNTuRU3-9JwKxQ4/edit#gid=632254106");
+          launchUrl(Uri.parse('https://docs.google.com/spreadsheets/d/1wJLuZhZg_Xs1ouyjh6chntY8p3lcgNTuRU3-9JwKxQ4/edit#gid=632254106'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
@@ -41,7 +41,7 @@ class Page5_1 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://docs.google.com/spreadsheets/d/1Ir0cw13_fXGLuyjeiwDHeRF8JErGw4iL-wzIfkHHFyw/edit#gid=0");
+          launchUrl(Uri.parse('https://docs.google.com/spreadsheets/d/1Ir0cw13_fXGLuyjeiwDHeRF8JErGw4iL-wzIfkHHFyw/edit#gid=0'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
@@ -60,7 +60,7 @@ class Page5_1 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://forum.gamer.com.tw/C.php?bsn=73182&snA=3");
+          launchUrl(Uri.parse('https://forum.gamer.com.tw/C.php?bsn=73182&snA=3'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
@@ -79,7 +79,7 @@ class Page5_1 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://forum.gamer.com.tw/C.php?bsn=73182&snA=6");
+          launchUrl(Uri.parse('https://forum.gamer.com.tw/C.php?bsn=73182&snA=6'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
@@ -98,7 +98,7 @@ class Page5_1 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://hackmd.io/@temmie950807/SL_DATA");
+          launchUrl(Uri.parse('https://hackmd.io/@temmie950807/SL_DATA'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
@@ -117,7 +117,7 @@ class Page5_1 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://discord.gg/JREx8xz");
+          launchUrl(Uri.parse('https://discord.gg/JREx8xz'),mode: LaunchMode.externalApplication);
         },
       ),
     ),

@@ -47,7 +47,9 @@ class Page3_3 extends StatelessWidget {
                       TextSpan(text: '下身盔甲\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
                       TextSpan(text: '係數防具第二，同上身\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                       TextSpan(text: '靴子\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
-                      TextSpan(text: '係數最低，同頭盔\n\n以上僅供參考，並沒有固定的配套，可自行搭配組合', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                      TextSpan(text: '係數最低，同頭盔\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                      TextSpan(text: '升級模組\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
+                      TextSpan(text: '可以裝在防具和武器上增加數值\n\n以上僅供參考，並沒有固定的配套，可自行搭配組合', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                     ]),
                   ),
                   SizedBox(height: 10),
@@ -60,6 +62,39 @@ class Page3_3 extends StatelessWidget {
                         boxShadow: [BoxShadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 10)]
                     ),
                     child:Text("裝備最高數值:\n- 爆率 70%\n- 爆傷 200%+基礎20%\n- 閃避 40%\n- 暈眩 20%\n- 治療 100%\n- 逃脫 80%\n- 討價 40%\n- 背包 128",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                      '升級模組'
+                      ,style: TextStyle(
+                      color: Color.fromRGBO(192, 191, 14, 1),fontSize: 24,shadows: [Shadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 5,offset: Offset(-3,-3))]
+                  )
+                  ),
+                  Divider(height: 10.0,color: Colors.grey,),
+                  Text(
+                      "升級模組是增加數值很重要的工具，適當的搭配可以湊出完美的數值"
+                      ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                  SizedBox(height: 10),
+                  Container(
+                    padding: EdgeInsets.fromLTRB(10, 10, 30, 10),
+                    margin: EdgeInsets.only(left: 5),
+                    decoration: BoxDecoration(
+                        color: Color.fromRGBO(43, 43, 43, 0.95),
+                        border: Border.all(color: Color.fromRGBO(192, 191, 14, 1)),
+                        boxShadow: [BoxShadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 10)]
+                    ),
+                    child:Text("模組詞綴介紹:\n括號內格式 (能力)(最低品質)(數值)"
+                        "\n- 體力(血量)(灰)(10%)"
+                        "\n- 回復(戰鬥完回復血量)(灰)(10%)"
+                        "\n- 護盾(戰鬥完回復護盾)(灰)(10%)"
+                        "\n- 傷害(武器傷害)(灰)(10%)"
+                        "\n- 爆率(爆擊機率)(灰)(1%~5%)"
+                        "\n- 爆傷(爆擊傷害)(灰)(1%~10%)"
+                        "\n- 閃避(閃避攻擊的機率)(綠)(1%~5%)"
+                        "\n- 逃跑(脫離戰鬥的機率)(灰)(10%~20%)"
+                        "\n- 暈眩(攻擊暈眩機率)(灰)(1%~5%)"
+                        "\n- 口袋(增加背包格數)(白)(1格~2格)"
+                        "\n- 治癒(增加藥品回血量)(綠)(4%~7%)",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                   ),
                   SizedBox(height: 10),
                   Text(
@@ -77,10 +112,10 @@ class Page3_3 extends StatelessWidget {
                         width: 1,
                         color: Color.fromRGBO(197, 226, 220, 1)),
                     columnWidths: const <int, TableColumnWidth>{
-                      0: FixedColumnWidth(70.0),
-                      1: FixedColumnWidth(100.0),
-                      2: FixedColumnWidth(100.0),
-                      3: FixedColumnWidth(100.0),
+                      0: FixedColumnWidth(80.0),
+                      1: FixedColumnWidth(70.0),
+                      2: FixedColumnWidth(80.0),
+                      3: FixedColumnWidth(80.0),
                     },
                     children: const <TableRow>[
                       TableRow(
@@ -91,15 +126,15 @@ class Page3_3 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("校準等級",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                            child:Text("等級",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("失敗機率",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                            child:Text("失敗率",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           ),
                           Padding(
                             padding: EdgeInsets.all(4.0),
-                            child:Text("增幅比例",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                            child:Text("增幅",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                           )
                         ],
                       ),

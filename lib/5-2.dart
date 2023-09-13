@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher_string.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Page5_2 extends StatelessWidget {
   List<Widget> list = <Widget>[
@@ -18,7 +18,7 @@ class Page5_2 extends StatelessWidget {
                 color: Color.fromRGBO(197, 226, 220, 1)
             ),
             onTap: (){
-              launchUrlString("https://cybercodeonline.com");
+              launchUrl(Uri.parse('https://cybercodeonline.com'),mode: LaunchMode.externalApplication);
             },
       ),
     ),
@@ -37,7 +37,7 @@ class Page5_2 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://play.google.com/store/apps/details?id=com.cybercodeonline.cybercode");
+          launchUrl(Uri.parse('https://play.google.com/store/apps/details?id=com.cybercodeonline.cybercode'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
@@ -56,7 +56,7 @@ class Page5_2 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://apps.apple.com/tw/app/cybercode-online-text-mmo/id1541691332");
+          launchUrl(Uri.parse('https://apps.apple.com/tw/app/cybercode-online-text-mmo/id1541691332'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
@@ -75,7 +75,7 @@ class Page5_2 extends StatelessWidget {
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
-          launchUrlString("https://www.microsoft.com/zh-tw/p/cybercode-online/9n9xc0hl2tsp?activetab=pivot:overviewtab");
+          launchUrl(Uri.parse('https://www.microsoft.com/zh-tw/p/cybercode-online/9n9xc0hl2tsp?activetab=pivot:overviewtab'),mode: LaunchMode.externalApplication);
         },
       ),
     ),
