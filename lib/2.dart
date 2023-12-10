@@ -29,7 +29,7 @@ class Page2 extends StatelessWidget {
               child: Theme(
                 data: ThemeData().copyWith(splashColor: Color.fromRGBO(20, 20, 20, 1)),
                 child: TabBar(
-                  indicatorColor: Color.fromRGBO(197, 226, 220, 1),
+                  indicatorColor: Color.fromRGBO(30, 30, 30, 1),
                   unselectedLabelColor: Color.fromRGBO(103, 103, 103, 1),
                   labelColor: Color.fromRGBO(197, 226, 220, 1),
                   tabs: myTabs,

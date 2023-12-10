@@ -36,8 +36,8 @@ class Page3_1_3 extends StatelessWidget {
   static List<Widget> list_material = <Widget>[
     tileMake('止痛藥', 'Pain Away', '最低階的單體醫療，僅能對玩家本人回血，分解後可得醫碎，轉換比例為2:1'),
     tileMake('其他單體醫療', '', '詳見物品>其他'),
-    tileMake('止痛噴劑', 'AI Core Cluster', '詳見物品>其他'),
-    tileMake('其他群體醫療', '', '可用於製作醫療物品、壓碎'),
+    tileMake('止痛噴劑', 'Pain Away Spray', '最低階群體醫療，能讓地城內所有玩家回血'),
+    tileMake('其他群體醫療', '', '詳見物品>其他'),
   ];
 
   @override
