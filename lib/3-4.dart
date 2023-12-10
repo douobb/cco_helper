@@ -81,7 +81,7 @@ class Page3_4 extends StatelessWidget {
                         color: Color.fromRGBO(197, 226, 220, 1)),
                     columnWidths: const <int, TableColumnWidth>{
                       0: FixedColumnWidth(180.0),
-                      1: FixedColumnWidth(80.0),
+                      1: FixedColumnWidth(90.0),
                       2: FixedColumnWidth(90.0),
                     },
                     children: const <TableRow>[
@@ -293,7 +293,7 @@ class Page3_4 extends StatelessWidget {
                         color: Color.fromRGBO(197, 226, 220, 1)),
                     columnWidths: const <int, TableColumnWidth>{
                       0: FixedColumnWidth(180.0),
-                      1: FixedColumnWidth(80.0),
+                      1: FixedColumnWidth(90.0),
                     },
                     children: const <TableRow>[
                       TableRow(

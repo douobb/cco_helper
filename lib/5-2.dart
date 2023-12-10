@@ -83,28 +83,25 @@ class Page5_2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-        alignment: Alignment.topCenter,
-        child: Container(
-          decoration: BoxDecoration(
-              border: Border(
-                  right: BorderSide(
-                      color: Color.fromRGBO(30, 30, 30, 1),
-                      width: 3
-                  ),
-                  left: BorderSide(
-                      color: Color.fromRGBO(30, 30, 30, 1),
-                      width: 3
-                  )
-              )
+    return Container(
+        decoration: BoxDecoration(
+            border: Border(
+                right: BorderSide(
+                    color: Color.fromRGBO(30, 30, 30, 1),
+                    width: 3
+                ),
+                left: BorderSide(
+                    color: Color.fromRGBO(30, 30, 30, 1),
+                    width: 3
+                )
+            )
+        ),
+        width: 800,
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: ListView(
+            children: list,
           ),
-          width: 800,
-          child: Padding(
-            padding: EdgeInsets.all(10),
-            child: ListView(
-                    children: list,
-            ),
-          )
         )
     );
   }

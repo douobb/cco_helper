@@ -106,9 +106,7 @@ class Page5_1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.topCenter,
-      child: Container(
+    return Container(
         decoration: BoxDecoration(
             border: Border(
                 right: BorderSide(
@@ -128,7 +126,6 @@ class Page5_1 extends StatelessWidget {
             children: list,
           ),
         )
-      )
     );
   }
 }
