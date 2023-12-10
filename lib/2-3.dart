@@ -96,7 +96,7 @@ class Page2_3 extends StatelessWidget {
                   ),
                   Divider(height: 30.0,color: Colors.grey,),
                   Text(
-                      "by douobb 2023/08/23"
+                      "by douobb 2023/12/10"
                       ,style: TextStyle(color:  Color.fromRGBO(103, 103, 103, 1),fontSize: 18)
                   ),
                 ],
