@@ -28,25 +28,6 @@ class Page5_1 extends StatelessWidget {
     ),
     ListTile(
       title: Text(
-        '甜博的開箱紀錄',
-        style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18),
-      ),
-      leading: Icon(
-        Icons.build,
-        color: Color.fromRGBO(103, 103, 103, 1),
-      ),
-      trailing: InkWell(
-        child: Icon(
-            Icons.arrow_forward,
-            color: Color.fromRGBO(197, 226, 220, 1)
-        ),
-        onTap: (){
-          launchUrl(Uri.parse('https://docs.google.com/spreadsheets/d/1Ir0cw13_fXGLuyjeiwDHeRF8JErGw4iL-wzIfkHHFyw/edit#gid=0'),mode: LaunchMode.externalApplication);
-        },
-      ),
-    ),
-    ListTile(
-      title: Text(
         '巴哈新手攻略',
         style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18),
       ),

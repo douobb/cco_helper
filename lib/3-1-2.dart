@@ -35,9 +35,9 @@ class Page3_1_2 extends StatelessWidget {
 
   static List<Widget> list_material = <Widget>[
     tileMake('快取記憶體', 'cache', '可以在3D分子列印機製作出對應品質裝備，獲得的物品等級取決於分子等級'),
-    tileMake('武器', '主武器(Primary Weapon)\n特殊武器(Special Weapon)\n破壞性武器(Destructive Weapon)', '詳見入門>裝備'),
-    tileMake('裝備', '頭盔(helmet)\n上身裝甲(upper armor)\n下身裝甲(lower armor)\n靴子(boots)', '詳見入門>裝備'),
-    tileMake('升級模組', 'upgrade module', '可以裝到武器上提升數值，詳見入門>裝備'),
+    tileMake('武器', '主武器 (pw)\n特殊武器 (sw)\n破壞性武器 (dw)', '詳見入門>裝備'),
+    tileMake('裝備', '頭盔 (helm)\n上身裝甲 (upper)\n下身裝甲 (lower)\n靴子 (boots)', '詳見入門>裝備'),
+    tileMake('升級模組 (mod)', 'upgrade module', '可以裝到武器上提升數值，詳見入門>裝備'),
     tileMake('能量電池', 'Energy Cell', '特殊武器所需子彈，分解後可獲得彈藥零件，轉換比例為20:1'),
     tileMake('反物質電池', 'Anti Matter Charge', '破壞性武器所需子彈，分解後可獲得軍用彈藥零件，轉換比例為20:1'),
   ];

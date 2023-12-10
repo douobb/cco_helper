@@ -9,9 +9,9 @@ class Page2_3 extends StatelessWidget {
     int diffDate = diff.inDays-diff.inDays%28;
     Text t=Text("");
     if(diff.inDays%28>=0 && diff.inDays%28<=6){
-      t = Text("目前為佔領期間\n本次佔領時間 : ${time_1.add(Duration(days: diffDate)).month}/${time_1.add(Duration(days: diffDate)).day} 08:00 - ${time_1.add(Duration(days: diffDate+7)).month}/${time_1.add(Duration(days: diffDate+7)).day} 08:00",style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18));
+      t = Text("目前為佔領期間，本次佔領時間:\n ${time_1.add(Duration(days: diffDate)).month}/${time_1.add(Duration(days: diffDate)).day} 08:00 - ${time_1.add(Duration(days: diffDate+7)).month}/${time_1.add(Duration(days: diffDate+7)).day} 08:00",style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18));
     }else{
-      t = Text("目前非佔領期間\n下次佔領時間 : ${time_1.add(Duration(days: (diffDate+28))).month}/${time_1.add(Duration(days: (diffDate+28))).day} 08:00 - ${time_1.add(Duration(days: (diffDate+35))).month}/${time_1.add(Duration(days: (diffDate+35))).day} 08:00",style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18));
+      t = Text("目前非佔領期間，下次佔領時間:\n ${time_1.add(Duration(days: (diffDate+28))).month}/${time_1.add(Duration(days: (diffDate+28))).day} 08:00 - ${time_1.add(Duration(days: (diffDate+35))).month}/${time_1.add(Duration(days: (diffDate+35))).day} 08:00",style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18));
     }
     return Align(
       alignment: Alignment.topCenter,

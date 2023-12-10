@@ -54,8 +54,6 @@ class Page3_4 extends StatelessWidget {
                       TextSpan(text: 'A:新手建議可以準備24、25爆率的紫色主武以及19、20討價的特武校準\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                       TextSpan(text: 'Q:掛機有哪些注意事項?\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
                       TextSpan(text: 'A:掛機所獲得經驗量和裝備等級有關，因此建議裝備等級應該盡量跟上主等級\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
-                      TextSpan(text: 'Q:douobb怎麼那麼帥?\n', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
-                      TextSpan(text: 'A:窩不知道( •̀ ω •́ )\n\n', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                     ]),
                   ),
                   SizedBox(height: 10),
@@ -289,9 +287,161 @@ class Page3_4 extends StatelessWidget {
                   )
                   ),
                   SizedBox(height: 10),
-                  Text(
-                      "窩不知道數據( •̀ ω •́ )b"
-                      ,style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                  Table(
+                    border: TableBorder.all(
+                        width: 1,
+                        color: Color.fromRGBO(197, 226, 220, 1)),
+                    columnWidths: const <int, TableColumnWidth>{
+                      0: FixedColumnWidth(180.0),
+                      1: FixedColumnWidth(80.0),
+                    },
+                    children: const <TableRow>[
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                              padding: EdgeInsets.all(4.0),
+                              child:Text("物品",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18))
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("補血量",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("止痛噴劑",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("301",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("舊式修復無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("901",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("舊式奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("4001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("10001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("軍用奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("20001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("進階奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("40001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("高級奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("80001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("稀有奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("160001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("傳奇奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("320001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("史詩奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("640001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                      TableRow(
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("至尊奈米醫療無人機",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(4.0),
+                            child:Text("3200001",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                   Divider(height: 30.0,color: Colors.grey,),
                   Text(
                       "by douobb 2023/09/09"

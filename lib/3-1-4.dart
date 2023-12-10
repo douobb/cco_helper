@@ -34,11 +34,11 @@ class Page3_1_4 extends StatelessWidget {
   }
 
   static List<Widget> list_material = <Widget>[
-    tileMake('老舊袋子', 'Old Pouch', '裝備後增加4格背包容量'),
-    tileMake('AI核心集群', 'Fanny Pack', '裝備後增加8格背包容量'),
-    tileMake('腰包', 'Explorer\'s Backpack', '裝備後增加16格背包容量'),
-    tileMake('公事包', 'Employee Office Case', '裝備後增加32格背包容量'),
-    tileMake('自主儲存單位', 'Autonomous Storage Unit', '裝備後增加64格背包容量'),
+    tileMake('老舊袋子 (op)', 'Old Pouch', '裝備後增加4格背包容量'),
+    tileMake('腰包 (fanny)', 'Fanny Pack', '裝備後增加8格背包容量'),
+    tileMake('探險家背包 (dora)', 'Explorer\'s Backpack', '裝備後增加16格背包容量'),
+    tileMake('公事包 (eoc)', 'Employee Office Case', '裝備後增加32格背包容量'),
+    tileMake('自主儲存單位 (asu)', 'Autonomous Storage Unit', '裝備後增加64格背包容量'),
   ];
 
   @override

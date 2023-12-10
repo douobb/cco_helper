@@ -44,7 +44,7 @@ class Page2_1 extends StatelessWidget {
                         border: Border.all(color: Color.fromRGBO(192, 191, 14, 1)),
                         boxShadow: [BoxShadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 10)]
                     ),
-                    child:Text("新手禮包內容:\n- 腰包 *1\n- AI核心 *200\n- 補給箱[公會] *300\n- 止痛藥 *1000\n- 能量電池 *1000\n- 反物質電池 *1000",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                    child:Text("新手禮包內容:\n- 老舊袋子 *1\n- AI核心 *200\n- 補給箱[公會] *300\n- 止痛藥 *1000\n- 能量電池 *1000\n- 反物質電池 *1000",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                   ),
                   SizedBox(height: 10),
                   Text(
@@ -95,7 +95,7 @@ class Page2_1 extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(
-                      '其他福利'
+                      '其他'
                       ,style: TextStyle(
                       color: Color.fromRGBO(192, 191, 14, 1),fontSize: 24,shadows: [Shadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 5,offset: Offset(-3,-3))]
                   )
@@ -103,7 +103,7 @@ class Page2_1 extends StatelessWidget {
                   Divider(height: 10.0,color: Colors.grey,),
                   RichText(
                     text: TextSpan(children: [
-                      TextSpan(text: 'CicholXDonut ', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
+                      TextSpan(text: 'douobb ', style: TextStyle(color: Color.fromRGBO(220, 100, 235, 1),fontSize: 18)),
                       TextSpan(text: '提供:', style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18))
                     ]),
                   ),
@@ -116,11 +116,11 @@ class Page2_1 extends StatelessWidget {
                         border: Border.all(color: Color.fromRGBO(192, 191, 14, 1)),
                         boxShadow: [BoxShadow(color: Color.fromRGBO(192, 191, 14, 0.7),blurRadius: 10)]
                     ),
-                    child:Text("每給一次聲望可選擇底下一項資源:\n- AI核心 *130\n- 雜湊處理器 *75\n- 科技碎片 *1000\n- 醫療科技零件 *1450\n- 彈藥零件 *1200\n- 稀有已加密容器 *4\n- 老舊袋子 *9\n- 已加密的公會記憶碎片 *15\n- 公會入侵指令發信器 *20",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
+                    child:Text("新手如果想要壓包打工賺AI的話可以私訊我(❁´◡`❁)",style: TextStyle(color: Color.fromRGBO(197, 226, 220, 1),fontSize: 18)),
                   ),
                   Divider(height: 30.0,color: Colors.grey,),
                   Text(
-                      "by douobb 2023/08/23"
+                      "by douobb 2023/12/10"
                       ,style: TextStyle(color:  Color.fromRGBO(103, 103, 103, 1),fontSize: 18)
                   ),
                 ],
