@@ -14,7 +14,7 @@ class Page5_2 extends StatelessWidget {
       ),
       trailing: InkWell(
             child: Icon(
-                Icons.download,
+                Icons.arrow_forward,
                 color: Color.fromRGBO(197, 226, 220, 1)
             ),
             onTap: (){
@@ -33,7 +33,7 @@ class Page5_2 extends StatelessWidget {
       ),
       trailing: InkWell(
         child: Icon(
-            Icons.download,
+            Icons.arrow_forward,
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
@@ -52,7 +52,7 @@ class Page5_2 extends StatelessWidget {
       ),
       trailing: InkWell(
         child: Icon(
-            Icons.download,
+            Icons.arrow_forward,
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
@@ -71,7 +71,7 @@ class Page5_2 extends StatelessWidget {
       ),
       trailing: InkWell(
         child: Icon(
-            Icons.download,
+            Icons.arrow_forward,
             color: Color.fromRGBO(197, 226, 220, 1)
         ),
         onTap: (){
