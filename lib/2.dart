@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import '2-1.dart';
 import '2-2.dart';
 import '2-3.dart';
+import '2-4.dart';
 
 class Page2 extends StatelessWidget {
   final List<Tab> myTabs = <Tab>[
+    Tab(child:Text('公會規範',style: TextStyle(fontSize: 16))),
     Tab(child:Text('公會福利',style: TextStyle(fontSize: 16))),
     Tab(child:Text('公會功能',style: TextStyle(fontSize: 16))),
     Tab(child:Text('佔領',style: TextStyle(fontSize: 16))),
   ];
 
-  final pages = [Page2_1(), Page2_2(), Page2_3()];
+  final pages = [Page2_1(), Page2_2(), Page2_3(), Page2_4()];
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +41,7 @@ class Page2 extends StatelessWidget {
             ),
           ),
           body: TabBarView(
-            children: <Widget>[Page2_1(), Page2_2(), Page2_3()],
+            children: <Widget>[Page2_1(), Page2_2(), Page2_3(), Page2_4()],
           ),
         ),
       ),
